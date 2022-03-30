@@ -75,6 +75,7 @@ footerB.addEventListener("click", function () {
       var random = Math.floor(Math.random() * todostorage.length);
       var span = document.createElement("span");
       span.innerText = todostorage[random].text;
+      this.parentNode.prepend(span);
       todostorage[random].item.setAttribute("class", "completed");
       saveTodos();
     } else location.reload();

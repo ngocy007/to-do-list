@@ -16,10 +16,19 @@ li {
 }
 
 .container {
-  background: #fff;
+  background-color: #fff;
   width: 400px;
 }
-input {
+ul {
+  overflow-x: hidden;
+  max-height: 450px;
+  margin-bottom: 10px;
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+.fin {
   outline: none;
   border: none;
   width: 70%;
@@ -62,4 +71,30 @@ li.completed {
 }
 li.completed span {
   text-decoration: line-through;
+}
+.footer span {
+  font-size: 25px;
+  width: 70%;
+  margin-left: -10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.footer {
+  border-top: 1px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footerB {
+  background: #91c52d;
+  padding: 10px 0px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-right: -10px;
+  margin-left: auto;
 }
